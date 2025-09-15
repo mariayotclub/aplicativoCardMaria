@@ -2,20 +2,7 @@ import { useState } from 'react';
 import { StyleSheet, Text, TouchableOpacity, View, Image, ImageBackground, Button, Linking } from 'react-native';
 
 export default function App() {
-  const[numero, setNumero] = useState(0)
-
-  const contador = (x) => {
-    if(numero == x-1){
-      setNumero(x)
-      if(x == 8) {
-        alert('Parabéns!!')
-        setNumero(0)
-      }
-    } else {
-      setNumero(0)
-      alert('Número errado, tente novamente!!!')
-    }
-  }
+ 
 
   return (
     
@@ -24,8 +11,9 @@ export default function App() {
       source={require('./assets/amarelo.jpg')} 
       style={styles.container2}
     >
-      <View style={{alignItems: 'center', justifyContent: 'center', marginTop: 50, marginBottom: 20, }}>
-        <Text style={{fontSize: 30, fontWeight: 'bold', color: '#ffffffff', marginBottom: 20, alignItems: 'center',justifyContent: 'center', }}> Discografia do NJZ</Text>
+      <View style={{alignItems: 'center', justifyContent: 'center', marginTop: 35, marginBottom: 20, }}>
+        <Text style={{fontSize: 30, fontWeight: 'bold', color: '#ffffffff', marginBottom: 10, alignItems: 'center',justifyContent: 'center', }}> Discografia do NJZ</Text>
+        <Text style={{fontSize: 20, fontWeight: 'bold', color: '#ffffffff', marginBottom: 10, alignItems: 'center',justifyContent: 'center', }}>Clique na capa do album para saber mais</Text>
       </View>
       <View style={styles.container}>
       <TouchableOpacity style={styles.box1} onPress={() => Linking.openURL('https://newjeans.fandom.com/pt-br/wiki/New_Jeans')}>

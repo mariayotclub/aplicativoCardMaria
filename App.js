@@ -11,9 +11,9 @@ export default function App() {
       source={require('./assets/amarelo.jpg')} 
       style={styles.container2}
     >
-      <View style={{alignItems: 'center', justifyContent: 'center', marginTop: 35, marginBottom: 20, }}>
-        <Text style={{fontSize: 30, fontWeight: 'bold', color: '#ffffffff', marginBottom: 10, alignItems: 'center',justifyContent: 'center', }}> Discografia do NJZ</Text>
-        <Text style={{fontSize: 20, fontWeight: 'bold', color: '#ffffffff', marginBottom: 10, alignItems: 'center',justifyContent: 'center', }}>Clique na capa do album para saber mais</Text>
+      <View style={{alignItems: 'center', justifyContent: 'center', marginTop: 40, marginBottom: 20, }}>
+        <Text style={{fontSize: 30, fontWeight: 'bold', color: '#ffffffff', marginBottom: 5, alignItems: 'center',justifyContent: 'center', }}> Discografia do NJZ</Text>
+        <Text style={{fontSize: 20, fontWeight: 'bold', color: '#ffffffff', marginBottom: 5, alignItems: 'center',justifyContent: 'center', }}>Clique na capa do album para saber mais</Text>
       </View>
       <View style={styles.container}>
       <TouchableOpacity style={styles.box1} onPress={() => Linking.openURL('https://newjeans.fandom.com/pt-br/wiki/New_Jeans')}>
